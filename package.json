@@ -1,27 +1,24 @@
 {
   "name": "bestcasinoportal-mcp-memory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP Memory Keeper for BestCasinoPortal_SEO project - Persistent context management for casino.ca architecture development",
   "main": "src/index.js",
   "type": "module",
+  "bin": {
+    "bestcasinoportal-mcp-memory": "src/index.js"
+  },
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
-    "test": "node test/test.js",
-    "build": "npm run clean && npm run compile",
-    "clean": "rm -rf dist",
-    "compile": "tsc"
+    "test": "node test/test.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
-    "sqlite3": "^5.1.6",
     "fs-extra": "^11.1.1",
-    "path": "^0.12.7",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0"
+    "@types/node": "^20.0.0"
   },
   "keywords": [
     "mcp",
